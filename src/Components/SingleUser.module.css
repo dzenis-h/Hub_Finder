@@ -1,0 +1,34 @@
+.singleUser {
+  margin: 0 auto;
+  max-width: 48rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.singleUser p {
+  margin-left: 1rem;
+}
+
+.singleUser a {
+  color: teal;
+}
+
+.singleUser img {
+  width: 10rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: teal;
+}
+
+.bio {
+  max-width: 15rem;
+}

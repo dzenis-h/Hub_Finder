@@ -1,0 +1,20 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.more {
+  color: black;
+  background-color: rgb(31, 189, 189);
+  padding: 0.33rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: small;
+  margin-top: 0.5rem;
+}
+
+.item img {
+  width: 4rem;
+  border-radius: 50%;
+}

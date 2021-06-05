@@ -1,0 +1,20 @@
+.header {
+  height: 10vh;
+  width: 100%;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: whitesmoke;
+}
