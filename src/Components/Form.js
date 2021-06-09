@@ -4,11 +4,11 @@ import { UsersContext } from '../store/users-context';
 
 function Form(props) {
   const [value, setValue] = useState('');
-  const ctx = useContext(UsersContext);
+  const { getUsers } = useContext(UsersContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (value !== '') ctx.getUsers(value);
+    if (value !== '') getUsers(value);
     setValue('');
   };
 

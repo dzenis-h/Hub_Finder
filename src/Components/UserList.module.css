@@ -4,3 +4,11 @@
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
 }
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lightseagreen;
+  font-weight: bold;
+}

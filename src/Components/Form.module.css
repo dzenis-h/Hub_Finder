@@ -21,3 +21,8 @@
   border-radius: 0.5rem;
   border-color: black;
 }
+
+.form button:hover {
+  color: rgb(145, 209, 209);
+  background-color: rgb(59, 54, 54);
+}

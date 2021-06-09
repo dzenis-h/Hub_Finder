@@ -1,22 +1,44 @@
 import React, { Fragment, useContext, useEffect } from 'react';
 import { UsersContext } from '../store/users-context';
 import Card from '../Layout/Card';
+import Spinner from '../Layout/Spinner';
 import classes from './SingleUser.module.css';
+import { Link } from 'react-router-dom';
 
 const SingleUser = (props) => {
-  const { getSingleUser, singleUser, getUserRepos, repos } =
+  const { getSingleUser, singleUser, getUserRepos, repos, loading } =
     useContext(UsersContext);
+
   const { login } = props.match.params;
 
   useEffect(() => {
     getSingleUser(login);
     getUserRepos(login);
-  }, [login]);
+  }, [login, getSingleUser, getUserRepos]);
 
-  console.log(singleUser);
+  const displayRepos = repos.map((r) => {
+    return (
+      <li key={r.id}>
+        {' '}
+        <b>Name: </b>
+        <a href={r.html_url} rel="noopener noreferrer" target="_blank">
+          {r.name}
+        </a>
+        <p>
+          <b>Description:</b> {r.description}
+        </p>
+        <hr />
+      </li>
+    );
+  });
+
+  if (loading) return <Spinner />;
 
   return (
     <Fragment>
+      <Link to="/" className={classes.back}>
+        Go back
+      </Link>
       {singleUser && (
         <div className={classes.singleUser}>
           <div>
@@ -48,33 +70,16 @@ const SingleUser = (props) => {
             <p>
               <b>Following: </b> {singleUser.following}
             </p>
-            <p className={classes.bio}>{singleUser.bio}</p>
+            <p className={classes.bio}>
+              <b>Bio: </b>
+              {singleUser.bio}
+            </p>
           </div>
           {/* ------------------------------------- */}
           <div>
             <Card>
               <h3>Most recent repos:</h3>
-              <ul>
-                {repos.map((r) => {
-                  return (
-                    <li key={r.id}>
-                      {' '}
-                      <b>Name: </b>
-                      <a
-                        href={r.html_url}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        {r.name}
-                      </a>
-                      <p>
-                        <b>Description:</b> {r.description}
-                      </p>
-                      <hr />
-                    </li>
-                  );
-                })}
-              </ul>
+              <ul>{displayRepos}</ul>
             </Card>
           </div>
         </div>

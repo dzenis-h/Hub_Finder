@@ -32,3 +32,29 @@ ul li a {
 .bio {
   max-width: 15rem;
 }
+
+a.back {
+  color: #444;
+  padding: 0.5rem;
+  background-color: rgb(105, 192, 192);
+  border-radius: 0.25rem;
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 0.33rem;
+  width: fit-content;
+}
+
+a.back:hover {
+  color: rgb(145, 209, 209);
+  background-color: rgb(59, 54, 54);
+}
+
+@media (max-width: 500px) {
+  .singleUser {
+    display: block;
+    text-align: center;
+  }
+  .bio {
+    max-width: 100%;
+  }
+}

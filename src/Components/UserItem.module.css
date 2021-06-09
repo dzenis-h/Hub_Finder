@@ -14,6 +14,11 @@
   margin-top: 0.5rem;
 }
 
+a.more:hover {
+  color: rgb(145, 209, 209);
+  background-color: rgb(59, 54, 54);
+}
+
 .item img {
   width: 4rem;
   border-radius: 50%;
