@@ -1,5 +1,5 @@
 
-## <img src="https://i.imgur.com/0o48UoR.png" alt="GitHub Logo" width="33" height="33"> Hub Finder
+## ![GitHub Logo](https://webstockreview.net/images/github-icon-png-12.png) Hub Finder
 
 >
 
