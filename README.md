@@ -1,5 +1,7 @@
-##
-## Hub Finder <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" style="float: right; padding: 5px;" width="100" height="100">
+
+## <img src="https://i.imgur.com/0o48UoR.png" alt="GitHub Logo" width="33" height="33"> Hub Finder
+
+>
 
 ## Overview 📝
 Hub Finder is a React app that uses the GitHub API to find details about its users. You can search for any GitHub user by their username and see their profile information, repositories, followers, and following. You can also filter the repositories by name, language, or date.
