@@ -1,4 +1,11 @@
-
+##
+![GitHub repo size](https://img.shields.io/github/repo-size/dzenis-h/Hub_Finder)
+![GitHub contributors](https://img.shields.io/github/contributors/dzenis-h/Hub_Finder)
+![GitHub stars](https://img.shields.io/github/stars/dzenis-h/Hub_Finder?style=social)
+![GitHub forks](https://img.shields.io/github/forks/dzenis-h/Hub_Finder?style=social)
+[![LinkedIn Follow](https://img.shields.io/badge/-Follow-blue?style=social&logo=linkedin&link=https://www.linkedin.com/in/dzenis-h/)](https://www.linkedin.com/in/dzenis-h/)
+[![GitHub Follow](https://img.shields.io/badge/-Follow-black?style=social&logo=github&link=https://github.com/dzenis-h)](https://github.com/dzenis-h)
+##
 ## <img src="https://webstockreview.net/images/github-icon-png-12.png" alt="GitHub Logo" width="40" height="40"> Hub Finder
 
 >
